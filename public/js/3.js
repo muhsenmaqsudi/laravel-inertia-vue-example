@@ -75,13 +75,21 @@ var render = function() {
           ])
         : _vm._e(),
       _vm._v(" "),
-      _c("div", { staticClass: "my-5" }, [
-        _c(
-          "a",
-          { staticClass: "btn btn-primary", attrs: { href: "/users/create" } },
-          [_vm._v("Create User")]
-        )
-      ]),
+      _c(
+        "div",
+        { staticClass: "my-5" },
+        [
+          _c(
+            "inertia-link",
+            {
+              staticClass: "btn btn-primary",
+              attrs: { href: "/users/create" }
+            },
+            [_vm._v("Create User")]
+          )
+        ],
+        1
+      ),
       _vm._v(" "),
       _c("table", { staticClass: "table table-striped" }, [
         _c("thead", [

@@ -6,7 +6,7 @@
             </div>
 
             <div class="my-5">
-                <a href="/users/create" class="btn btn-primary">Create User</a>
+                <inertia-link href="/users/create" class="btn btn-primary">Create User</inertia-link>
             </div>
             <table class="table table-striped">
                 <thead>
