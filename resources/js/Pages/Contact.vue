@@ -1,6 +1,6 @@
 <template>
     <layout>
-        <h2>This is a welcome page {{ foo }} </h2>
+        <h2>This is a Contact page</h2>
     </layout>
 </template>
 
@@ -8,7 +8,6 @@
     import Layout from '@/Shared/Layout';
     export default {
         name: "Welcome",
-        props: ['foo'],
         components: {
             Layout
         }
