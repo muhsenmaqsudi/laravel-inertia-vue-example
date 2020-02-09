@@ -66,22 +66,82 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("main", [
-    _c(
-      "header",
-      [
-        _c("inertia-link", { attrs: { href: "/" } }, [_vm._v("Home")]),
-        _vm._v(" "),
-        _c("inertia-link", { attrs: { href: "/about" } }, [_vm._v("About")]),
-        _vm._v(" "),
-        _c("inertia-link", { attrs: { href: "/contact" } }, [_vm._v("Contact")])
-      ],
-      1
-    ),
+    _c("nav", { staticClass: "navbar navbar-expand-lg navbar-dark bg-dark" }, [
+      _c("a", { staticClass: "navbar-brand", attrs: { href: "#" } }, [
+        _vm._v("Navbar")
+      ]),
+      _vm._v(" "),
+      _vm._m(0),
+      _vm._v(" "),
+      _c(
+        "div",
+        {
+          staticClass: "collapse navbar-collapse",
+          attrs: { id: "navbarNavAltMarkup" }
+        },
+        [
+          _c(
+            "div",
+            { staticClass: "navbar-nav" },
+            [
+              _c(
+                "inertia-link",
+                { staticClass: "nav-item nav-link", attrs: { href: "/" } },
+                [_vm._v("Home")]
+              ),
+              _vm._v(" "),
+              _c(
+                "inertia-link",
+                { staticClass: "nav-item nav-link", attrs: { href: "/about" } },
+                [_vm._v("About")]
+              ),
+              _vm._v(" "),
+              _c(
+                "inertia-link",
+                {
+                  staticClass: "nav-item nav-link",
+                  attrs: { href: "/contact" }
+                },
+                [_vm._v("Contact")]
+              ),
+              _vm._v(" "),
+              _c(
+                "inertia-link",
+                { staticClass: "nav-item nav-link", attrs: { href: "/users" } },
+                [_vm._v("Users")]
+              )
+            ],
+            1
+          )
+        ]
+      )
+    ]),
     _vm._v(" "),
     _c("article", [_vm._t("default")], 2)
   ])
 }
-var staticRenderFns = []
+var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "button",
+      {
+        staticClass: "navbar-toggler",
+        attrs: {
+          type: "button",
+          "data-toggle": "collapse",
+          "data-target": "#navbarNavAltMarkup",
+          "aria-controls": "navbarNavAltMarkup",
+          "aria-expanded": "false",
+          "aria-label": "Toggle navigation"
+        }
+      },
+      [_c("span", { staticClass: "navbar-toggler-icon" })]
+    )
+  }
+]
 render._withStripped = true
 
 

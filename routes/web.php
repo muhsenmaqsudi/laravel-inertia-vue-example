@@ -19,3 +19,6 @@ Route::get('/contact', function () {
         'foo' => 'bar'
     ]);
 });
+
+
+Route::get('/users', 'UsersController@index')->name('user.index');
